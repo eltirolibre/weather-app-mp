@@ -1,0 +1,45 @@
+.weather-app {
+    border: 3px solid;
+    border-color: #00204a;
+    font-family: "Montserrat", sans-serif;
+    max-width: 60%;
+    margin: 0 auto;
+    display: block;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 20px;
+    background: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  }
+  
+  .col-sm-5 {
+    margin-left: 50px;
+    line-height: 40px;
+  }
+  
+  h3,
+  h4,
+  h5 {
+    margin-left: 50px;
+    color: white;
+  }
+  .weather-icon,
+  .main-weather-description {
+    color: white;
+    font-size: 25px;
+    position: relative;
+  }
+  .weather-icon {
+    margin-left: 60px;
+  }
+  
+  .card {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #00204a;
+  }
+  .fa-solid {
+    font-size: 20px;
+  }
+  

@@ -1,12 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Week 4_SheCodesPro_MP</title>
+    <script
+      src="https://kit.fontawesome.com/fdea382e48.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="weather-app">
+      <div class="row g-3">
+        <div class="col-sm-5">
+          <input
+            type="text"
+            class="form-control"
+            id="search-city"
+            placeholder="Enter a city..."
+          />
+        </div>
+        <div class="col-sm-2">
+          <button type="button" class="btn btn-light btn" id="search-button">
+            Search...
+          </button>
+        </div>
+        <div class="col-sm">
+          <button type="button" class="btn btn-light btn" id="current-button">
+            Current Location
+          </button>
+        </div>
+      </div>
+      <br />
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <h3 id="current-city">Toronto</h3>
+            <h4 id="current-date"></h4>
+            <h5 id="current-time"></h5>
+            <h5 id="current-temp">20°C | 68°F</h5>
+          </div>
+          <div class="col-4">
+            <span class="main-weather-description">
+              <i class="fa-solid fa-cloud-sun weather-icon"></i>
+              <p class="example">Partly Cloudy</p>
+            </span>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+
+      <h5>Next 5 days</h5>
+      <div class="row">
+        <div class="col-2">
+          <div class="card" style="width: 9rem;">
+            <div class="card-body">
+              <h6 class="card-title">Monday, June 6</h6>
+              <p class="card-text">
+                30°C | 86°F <br />
+                <i class="fa-solid fa-sun next-5"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card" style="width: 9rem;">
+            <div class="card-body">
+              <h6 class="card-title">Tuesday, June 7</h6>
+              <p class="card-text">
+                32°C | 90°F <br />
+                <i class="fa-solid fa-sun next-5"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card" style="width: 9rem;">
+            <div class="card-body">
+              <h6 class="card-title">Wednesday, June 8</h6>
+              <p class="card-text">
+                26°C | 79°F <br />
+                <i class="fa-solid fa-cloud-sun next-5"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card" style="width: 9rem;">
+            <div class="card-body">
+              <h6 class="card-title">Thursday, June 9</h6>
+              <p class="card-text">
+                21°C | 70°F <br />
+                <i class="fa-solid fa-cloud-rain next-5"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="card" style="width: 9rem;">
+            <div class="card-body">
+              <h6 class="card-title">
+                Friday,<br />
+                June 10
+              </h6>
+              <p class="card-text">
+                22°C | 71°F <br />
+                <i class="fa-solid fa-cloud-sun next-5"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
 </html>
